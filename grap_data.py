@@ -59,30 +59,4 @@ class YiLaoData(object):
 if __name__ == '__main__':
     grap_lao = YiLaoData()
     grap_lao.run()
-#
-# from selenium import webdriver
-# from selenium.webdriver.chrome.options import Options
-# import time
-#
-# chrome_options = Options()
-# chrome_options.add_argument('--headless')
-# driver = webdriver.Chrome(chrome_options=chrome_options)
-# driver.get('http://detail.1818lao.com/leading/searchProduct.aspx?searchStr=%E7%94%B7%E8%A3%85&ctgId=3001&currPage=3')
-# time.sleep(5)
-# obs = driver.find_elements_by_xpath("//div[@class='db_xk']/input")
-# goods_list = []
-# for ob in obs:
-#     print(ob.get_attribute('imgurl'))
-#     print(ob.get_attribute('goodstitle'))
-#     print(ob.get_attribute('price'))
-#     content = {
-#         'name': ob.get_attribute('goodstitle'),
-#         'imgurl': ob.get_attribute('imgurl'),
-#         'price': ob.get_attribute('price')
-#     }
-#     goods_list.append(content)
-#
-# print(goods_list)
-#
-# with open('goodinfo', 'w') as f:
-#     f.write(str(goods_list))
+
